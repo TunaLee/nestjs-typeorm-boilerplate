@@ -23,7 +23,7 @@ import { S3Module } from './modules/s3/s3.module';
         database: configService.dbName,
         entities: [join(__dirname, '/**/*.entity.{ts,js}')],
         migrations: [join(__dirname, './migrations/**/*{.ts,.js}')],
-        synchronize: configService.nodeEnv === 'dev',
+        // synchronize: configService.nodeEnv === 'dev',
       }),
       inject: [DbConfigService],
     }),
